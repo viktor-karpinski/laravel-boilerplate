@@ -9,4 +9,19 @@ use Illuminate\Routing\Controller as BaseController;
 class Controller extends BaseController
 {
     use AuthorizesRequests, ValidatesRequests;
+
+    public function index()
+    {
+        return view('index');
+    }
+
+    public function imprint()
+    {
+        return view('imprint');
+    }
+
+    public function data_privacy()
+    {
+        return view('dataprivacy');
+    }
 }

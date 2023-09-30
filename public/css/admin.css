@@ -1,0 +1,25 @@
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main {
+    background-color: #fafafa;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 10rem 2rem;
+}

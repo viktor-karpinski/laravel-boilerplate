@@ -1,0 +1,53 @@
+:root {
+    --main: #df2b6d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    border: none;
+    border-radius: 0rem;
+
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+    list-style-type: none;
+    outline: none;
+}
+
+::selection {
+    background-color: var(--main);
+}
+
+html, body {
+    overflow: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+button, a, label, input, textarea {
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+p, button, a, label, input, textarea {
+    font-size: 1.8rem;
+}
+
+#load {
+    display: none;
+}
