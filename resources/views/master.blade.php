@@ -37,7 +37,15 @@
                 logo
             </a>
             <nav>
-                yield('navigation')
+                @yield('navigation')
+                @if(isset(Auth::user()->id))
+                <form action="{{ route('logout') }}" method="POST">
+                    @csrf
+                    <button id="logout">
+                        logout
+                    </button>
+                </form>
+                @endif
             </nav>
         </header>
         <main>

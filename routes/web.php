@@ -30,7 +30,7 @@ Route::middleware(['cache.headers', 'admin.route'])->group(function () {
         Route::post('/', [AuthController::class, 'authenticate'])->name('authenticate');
 
         Route::middleware('auth')->group(function () {
-            Route::post('logout', [AdminController::class, 'dashboard'])->name('logout');
+            Route::post('logout', [AuthController::class, 'logout'])->name('logout');
             Route::get('dashboard', [AdminController::class, 'dashboard'])->name('dashboard');
         });
     });
